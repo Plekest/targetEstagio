@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite uma frase: ");
+		String letra = sc.nextLine();
+		String reverso = "";
+
+		for (int i = letra.length() - 1; i >= 0; i--) {
+			reverso += letra.charAt(i);
+		}
+
+		System.out.println("A frase invertida é: " + reverso);
+
+		sc.close();
+	}
+
+}
